@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8"> <!-- Codificación de caracteres -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Escalado para dispositivos móviles -->
+    <link rel="stylesheet" href="style.css"> <!-- Enlace al archivo CSS -->
+    <title>Tres en Raya</title> <!-- Título de la pestaña -->
+</head>
+<body>
+
+    <!-- Fichas del jugador 1 (Cruces) -->
+    <div class="arrastrar">
+        <div class="cajaArrastre">
+            <!-- Cada "cruz" es una ficha que se puede arrastrar -->
+            <div class="cruz" draggable="true" ondragstart="arrastrar(event)" id="cruz1"></div>
+            <div class="cruz" draggable="true" ondragstart="arrastrar(event)" id="cruz2"></div>
+            <div class="cruz" draggable="true" ondragstart="arrastrar(event)" id="cruz3"></div>
+            <div class="cruz" draggable="true" ondragstart="arrastrar(event)" id="cruz4"></div>
+            <div class="cruz" draggable="true" ondragstart="arrastrar(event)" id="cruz5"></div>
+        </div>
+    </div>
+
+    <!-- Tablero principal 3x3 -->
+    <div class="tablero">
+        <!-- Cada div es una celda del tablero -->
+        <div class="caja" ondrop="soltar(event)" ondragover="permitirSoltar(event)"></div>
+        <div class="caja" ondrop="soltar(event)" ondragover="permitirSoltar(event)"></div>
+        <div class="caja" ondrop="soltar(event)" ondragover="permitirSoltar(event)"></div>
+        <div class="caja" ondrop="soltar(event)" ondragover="permitirSoltar(event)"></div>
+        <div class="caja" ondrop="soltar(event)" ondragover="permitirSoltar(event)"></div>
+        <div class="caja" ondrop="soltar(event)" ondragover="permitirSoltar(event)"></div>
+        <div class="caja" ondrop="soltar(event)" ondragover="permitirSoltar(event)"></div>
+        <div class="caja" ondrop="soltar(event)" ondragover="permitirSoltar(event)"></div>
+        <div class="caja" ondrop="soltar(event)" ondragover="permitirSoltar(event)"></div>
+    </div>
+
+    <!-- Fichas del jugador 2 (Círculos) -->
+    <div class="arrastrar">
+        <div class="cajaArrastre">
+            <!-- Cada "circulo" es una ficha arrastrable -->
+            <div class="circulo" draggable="true" ondragstart="arrastrar(event)" id="circulo1"></div>
+            <div class="circulo" draggable="true" ondragstart="arrastrar(event)" id="circulo2"></div>
+            <div class="circulo" draggable="true" ondragstart="arrastrar(event)" id="circulo3"></div>
+            <div class="circulo" draggable="true" ondragstart="arrastrar(event)" id="circulo4"></div>
+            <div class="circulo" draggable="true" ondragstart="arrastrar(event)" id="circulo5"></div>
+        </div>
+    </div>
+
+    <!-- Enlace al archivo JS externo -->
+    <script src="script.js"></script>
+
+
+</body>
+</html>
